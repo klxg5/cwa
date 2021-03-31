@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Csv Veiwer</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div id="drop-zone-box">
+        <span id="drop-zone-promt">Click to upload a CSV file</span>
+        <input type="file" name="csv" id="drop-zone-input" />
+      </div>
+    </div>
+    <div class="container">
+      <input type="text" name="search" id="search" />
+      <button class="btn" id="clear-btn">clear</button>
+      <span>Select columns to include in search</span>
+      <table id="data-table"></table>
+    </div>
+    <div id="console-box"></div>
+    <script type="module" src="./main.js"></script>
+  </body>
+</html>
